@@ -1,0 +1,4 @@
+#Sun Mar 15 02:03:56 JST 2026
+base.0=/home/endo/GitHubDownloader/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

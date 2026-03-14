@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_vertical"
+    android:background="#F5F5F5">
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:src="@android:drawable/ic_menu_upload" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GitHub リリース ダウンローダー"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GitHubリポジトリのURLを入力してリリースバイナリをダウンロードします"
+        android:textSize="13sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etRepoUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:hint="https://github.com/owner/repo"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnGetLatest"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="最新リリースを取得"
+        android:textColor="#FFFFFF"
+        android:background="#1976D2"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnFetchReleases"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="全リリース履歴を表示"
+        android:textColor="#1976D2"
+        android:background="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="例:\n• https://github.com/termux/termux-app\n• https://github.com/M66B/NetGuard\n• owner/repo"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:padding="12dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>
