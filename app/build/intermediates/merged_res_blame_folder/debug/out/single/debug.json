@@ -12,6 +12,10 @@
         "source": "/home/endo/GitHubDownloader/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/endo/GitHubDownloader/app/build/intermediates/merged_res/debug/layout_item_bookmark.xml.flat",
+        "source": "/home/endo/GitHubDownloader/app/src/main/res/layout/item_bookmark.xml"
+    },
+    {
         "merged": "/home/endo/GitHubDownloader/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/endo/GitHubDownloader/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
@@ -46,6 +50,10 @@
     {
         "merged": "/home/endo/GitHubDownloader/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/home/endo/GitHubDownloader/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/endo/GitHubDownloader/app/build/intermediates/merged_res/debug/layout_activity_bookmark.xml.flat",
+        "source": "/home/endo/GitHubDownloader/app/src/main/res/layout/activity_bookmark.xml"
     },
     {
         "merged": "/home/endo/GitHubDownloader/app/build/intermediates/merged_res/debug/layout_activity_release_list.xml.flat",

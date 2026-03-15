@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.github.downloader"
-    android:versionCode="1"
+    android:versionCode="3"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -64,6 +64,9 @@
         </activity>
         <activity
             android:name="com.github.downloader.ReleaseListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.github.downloader.BookmarkActivity"
             android:exported="false" />
 
         <service

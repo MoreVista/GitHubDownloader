@@ -1,15 +1,22 @@
 com/github/downloader/BuildConfig.java
  com.github.downloader.BuildConfig
+com/github/downloader/BookmarkActivity.java
+ com.github.downloader.BookmarkActivity
+ com.github.downloader.BookmarkActivity$BookmarkAdapter
+ com.github.downloader.BookmarkActivity$BookmarkAdapter$1
+ com.github.downloader.BookmarkActivity$BookmarkAdapter$2
+ com.github.downloader.BookmarkActivity$BookmarkAdapter$3
+ com.github.downloader.BookmarkActivity$BookmarkAdapter$VH
+com/github/downloader/BookmarkManager.java
+ com.github.downloader.BookmarkManager
 com/github/downloader/GitHubRelease.java
  com.github.downloader.GitHubRelease
  com.github.downloader.GitHubRelease$Asset
-com/github/downloader/ReleaseListActivity.java
- com.github.downloader.ReleaseListActivity
- com.github.downloader.ReleaseListActivity$1
- com.github.downloader.ReleaseListActivity$2
- com.github.downloader.ReleaseListActivity$ReleaseAdapter
- com.github.downloader.ReleaseListActivity$ReleaseAdapter$1
- com.github.downloader.ReleaseListActivity$ReleaseAdapter$ReleaseViewHolder
+com/github/downloader/MainActivity.java
+ com.github.downloader.MainActivity
+ com.github.downloader.MainActivity$1
+ com.github.downloader.MainActivity$2
+ com.github.downloader.MainActivity$3
 com/github/downloader/TLSSocketFactory.java
  com.github.downloader.TLSSocketFactory
  com.github.downloader.TLSSocketFactory$1
@@ -28,7 +35,11 @@ com/github/downloader/DownloadService.java
  com.github.downloader.DownloadService$DownloadRunnable$2
  com.github.downloader.DownloadService$DownloadRunnable$3
  com.github.downloader.DownloadService$DownloadRunnable$4
-com/github/downloader/MainActivity.java
- com.github.downloader.MainActivity
- com.github.downloader.MainActivity$1
- com.github.downloader.MainActivity$2
+com/github/downloader/ReleaseListActivity.java
+ com.github.downloader.ReleaseListActivity
+ com.github.downloader.ReleaseListActivity$1
+ com.github.downloader.ReleaseListActivity$2
+ com.github.downloader.ReleaseListActivity$3
+ com.github.downloader.ReleaseListActivity$ReleaseAdapter
+ com.github.downloader.ReleaseListActivity$ReleaseAdapter$1
+ com.github.downloader.ReleaseListActivity$ReleaseAdapter$ReleaseViewHolder
