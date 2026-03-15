@@ -24,11 +24,40 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.github.downloader.MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:launchMode="singleTask" >
+
+            <!-- 通常起動 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- https://github.com/owner/repo 形式のURLを受け取る -->
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="github.com"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- http://github.com/owner/repo も念のため受け取る -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="github.com"
+                    android:pathPattern="/.*"
+                    android:scheme="http" />
             </intent-filter>
         </activity>
         <activity

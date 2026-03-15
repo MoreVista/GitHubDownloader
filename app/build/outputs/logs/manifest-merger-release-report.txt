@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:36:9-44:20
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:62:9-70:20
 	android:grantUriPermissions
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:40:13-47
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:66:13-47
 	android:authorities
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:38:13-64
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:64:13-64
 	android:exported
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:39:13-37
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:37:13-62
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:63:13-62
 manifest
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
 MERGED from [com.google.android.material:material:1.4.0] /home/endo/.gradle/caches/transforms-3/1508bc0f4d67cb1fb46dec23183d0585/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/endo/.gradle/caches/transforms-3/7f164d582628042be3b6dc614f3f45fd/transformed/constraintlayout-2.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/endo/.gradle/caches/transforms-3/e9612e7e6087009ff0139f0ccf77b379/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
@@ -50,20 +50,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/endo/.gradle/caches
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/endo/.gradle/caches/transforms-3/30559646bdc9f3290097ba378eb99203/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/endo/.gradle/caches/transforms-3/b618f929228947d1fd03b4a852d85b00/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/endo/.gradle/caches/transforms-3/78759bb9014001eef7850905c2fbbc44/transformed/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
-INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
 	package
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-48:12
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:1-74:12
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:2:11-69
@@ -88,7 +88,7 @@ ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:9:5-83
 	android:name
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:9:22-80
 application
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:11:5-46:19
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:11:5-72:19
 MERGED from [com.google.android.material:material:1.4.0] /home/endo/.gradle/caches/transforms-3/1508bc0f4d67cb1fb46dec23183d0585/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/endo/.gradle/caches/transforms-3/1508bc0f4d67cb1fb46dec23183d0585/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/endo/.gradle/caches/transforms-3/7f164d582628042be3b6dc614f3f45fd/transformed/constraintlayout-2.1.1/AndroidManifest.xml:9:5-20
@@ -112,33 +112,61 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/endo/
 	android:theme
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:17:9-40
 activity#com.github.downloader.MainActivity
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:19:9-26:20
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:19:9-52:20
+	android:launchMode
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:22:13-44
 	android:exported
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:21:13-36
 	android:name
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:22:13-25:29
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:25:13-28:29
 action#android.intent.action.MAIN
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:27:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:github.com+data:pathPattern:/.*+data:scheme:https
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:31:13-39:29
+	android:autoVerify
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:31:28-53
+action#android.intent.action.VIEW
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:17-76
+	android:name
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:17-78
+	android:name
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:27-75
+data
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:35:17-38:49
+	android:host
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:37:21-46
+	android:scheme
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:36:21-43
+	android:pathPattern
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:38:21-46
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:github.com+data:pathPattern:/.*+data:scheme:http
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:42:13-50:29
 activity#com.github.downloader.ReleaseListActivity
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:28:9-30:40
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:54:9-56:40
 	android:exported
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:30:13-37
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:56:13-37
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:29:13-48
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:55:13-48
 service#com.github.downloader.DownloadService
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:9-34:40
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:58:9-60:40
 	android:exported
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:13-37
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:13-44
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:59:13-44
 uses-sdk
 INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
@@ -224,8 +252,8 @@ INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 		INJECTED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:41:13-43:54
+ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:67:13-69:54
 	android:resource
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:43:17-51
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:69:17-51
 	android:name
-		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:42:17-67
+		ADDED from /home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:68:17-67
