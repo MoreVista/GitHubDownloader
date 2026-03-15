@@ -27,7 +27,7 @@
 15-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:9:22-80
 16
 17    <application
-17-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:11:5-46:19
+17-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:11:5-72:19
 18        android:allowBackup="true"
 18-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:12:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -45,52 +45,105 @@
 26        android:theme="@style/AppTheme" >
 26-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:17:9-40
 27        <activity
-27-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:19:9-26:20
+27-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:19:9-52:20
 28            android:name="com.github.downloader.MainActivity"
 28-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:20:13-41
-29            android:exported="true" >
+29            android:exported="true"
 29-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:21:13-36
-30            <intent-filter>
-30-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:22:13-25:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:23:17-69
-31-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:23:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:24:17-77
-33-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:24:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity
-36-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:28:9-30:40
-37            android:name="com.github.downloader.ReleaseListActivity"
-37-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:29:13-48
-38            android:exported="false" />
-38-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:30:13-37
-39
-40        <service
-40-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:9-34:40
-41            android:name="com.github.downloader.DownloadService"
-41-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:13-44
-42            android:exported="false" />
-42-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:13-37
-43
-44        <provider
-45            android:name="androidx.core.content.FileProvider"
-45-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:37:13-62
-46            android:authorities="com.github.downloader.fileprovider"
-46-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:38:13-64
-47            android:exported="false"
-47-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:39:13-37
-48            android:grantUriPermissions="true" >
-48-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:40:13-47
-49            <meta-data
-49-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:41:13-43:54
-50                android:name="android.support.FILE_PROVIDER_PATHS"
-50-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:42:17-67
-51                android:resource="@xml/file_paths" />
-51-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:43:17-51
-52        </provider>
-53    </application>
-54
-55</manifest>
+30            android:launchMode="singleTask" >
+30-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:22:13-44
+31
+32            <!-- 通常起動 -->
+33            <intent-filter>
+33-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:25:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:26:17-69
+34-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:26:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:27:17-77
+36-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38
+39            <!-- https://github.com/owner/repo 形式のURLを受け取る -->
+40            <intent-filter android:autoVerify="true" >
+40-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:31:13-39:29
+40-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:31:28-53
+41                <action android:name="android.intent.action.VIEW" />
+41-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:17-69
+41-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:25-66
+42
+43                <category android:name="android.intent.category.DEFAULT" />
+43-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:17-76
+43-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:27-73
+44                <category android:name="android.intent.category.BROWSABLE" />
+44-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:17-78
+44-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:27-75
+45
+46                <data
+46-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:35:17-38:49
+47                    android:host="github.com"
+47-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:37:21-46
+48                    android:pathPattern="/.*"
+48-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:38:21-46
+49                    android:scheme="https" />
+49-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:36:21-43
+50            </intent-filter>
+51
+52            <!-- http://github.com/owner/repo も念のため受け取る -->
+53            <intent-filter>
+53-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:42:13-50:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:17-69
+54-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:32:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:17-76
+56-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:33:27-73
+57                <category android:name="android.intent.category.BROWSABLE" />
+57-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:17-78
+57-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:34:27-75
+58
+59                <data
+59-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:35:17-38:49
+60                    android:host="github.com"
+60-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:37:21-46
+61                    android:pathPattern="/.*"
+61-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:38:21-46
+62                    android:scheme="http" />
+62-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:36:21-43
+63            </intent-filter>
+64        </activity>
+65        <activity
+65-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:54:9-56:40
+66            android:name="com.github.downloader.ReleaseListActivity"
+66-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:55:13-48
+67            android:exported="false" />
+67-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:56:13-37
+68
+69        <service
+69-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:58:9-60:40
+70            android:name="com.github.downloader.DownloadService"
+70-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:59:13-44
+71            android:exported="false" />
+71-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:60:13-37
+72
+73        <provider
+74            android:name="androidx.core.content.FileProvider"
+74-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:63:13-62
+75            android:authorities="com.github.downloader.fileprovider"
+75-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:64:13-64
+76            android:exported="false"
+76-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:65:13-37
+77            android:grantUriPermissions="true" >
+77-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:66:13-47
+78            <meta-data
+78-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:67:13-69:54
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:68:17-67
+80                android:resource="@xml/file_paths" />
+80-->/home/endo/GitHubDownloader/app/src/main/AndroidManifest.xml:69:17-51
+81        </provider>
+82    </application>
+83
+84</manifest>
