@@ -39,7 +39,7 @@ public class DownloadService extends Service {
         public boolean verify(String hostname, SSLSession session) { return true; }
     };
     static {
-        if (android.os.Build.VERSION.SDK_INT <= android.os.Build.VERSION_CODES.KITKAT) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
             try {
                 tlsSocketFactory = new TLSSocketFactory();
             } catch (Exception e) {
@@ -168,7 +168,7 @@ public class DownloadService extends Service {
                 URL u = new URL(downloadUrl);
                 conn = (HttpURLConnection) u.openConnection();
                 // Android 4.1-4.4: 全証明書信頼 + ホスト名検証スキップ + TLS1.1/1.2有効化
-                if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP
                         && conn instanceof HttpsURLConnection) {
                     HttpsURLConnection https = (HttpsURLConnection) conn;
                     if (tlsSocketFactory != null) {

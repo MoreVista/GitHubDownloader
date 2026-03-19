@@ -17,9 +17,14 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 /**
- * Android 4.1〜4.4 向け TLSSocketFactory。
- * - TLS1.1 / TLS1.2 を明示的に有効化
- * - 全証明書を信頼する TrustManager を使用（古い端末のルート証明書不足対策）
+ * Android 4.4 以下（API <= 20）向け TLSSocketFactory。
+ *
+ * Conscrypt が Security プロバイダとして登録されていれば
+ * SSLContext.getInstance("TLS") は自動的に Conscrypt の実装を使う。
+ * これにより API 9（Android 2.3）以上で TLS 1.2 通信が可能。
+ *
+ * 加えて、古い端末のルート証明書ストアが不足している問題に対応するため
+ * 全証明書を信頼する TrustManager を使用する。
  *
  * 参考: https://qiita.com/ntsk/items/9f31fc7b44c04ea45e0b
  */
@@ -27,7 +32,7 @@ public class TLSSocketFactory extends SSLSocketFactory {
 
     private final SSLSocketFactory delegate;
 
-    /** 全証明書を信頼する TrustManager */
+    /** 全証明書を信頼する TrustManager（古い端末の証明書ストア不足対策） */
     private static final TrustManager[] TRUST_ALL = new TrustManager[]{
         new X509TrustManager() {
             @Override
@@ -44,6 +49,7 @@ public class TLSSocketFactory extends SSLSocketFactory {
     };
 
     public TLSSocketFactory() throws KeyManagementException, NoSuchAlgorithmException {
+        // Conscrypt が登録済みなら自動的に Conscrypt の TLS 実装が使われる
         SSLContext ctx = SSLContext.getInstance("TLS");
         ctx.init(null, TRUST_ALL, new SecureRandom());
         delegate = ctx.getSocketFactory();
@@ -81,7 +87,9 @@ public class TLSSocketFactory extends SSLSocketFactory {
 
     private Socket tls(Socket socket) {
         if (socket instanceof SSLSocket) {
-            ((SSLSocket) socket).setEnabledProtocols(new String[]{"TLSv1.1", "TLSv1.2"});
+            SSLSocket ssl = (SSLSocket) socket;
+            // TLS 1.2 を明示的に有効化（Conscrypt 経由なら 1.3 も使える）
+            ssl.setEnabledProtocols(new String[]{"TLSv1.2", "TLSv1.1", "TLSv1"});
         }
         return socket;
     }

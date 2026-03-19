@@ -7,10 +7,13 @@ android {
 
     defaultConfig {
         applicationId "com.github.downloader"
-        minSdkVersion 16
+        minSdkVersion 9
         targetSdkVersion 31
-        versionCode 3
-        versionName "2.1"
+        versionCode 4
+        versionName "1.0"
+
+        // API 9-20 向けに multidex を有効化（Conscrypt + androidx で dex 数が増えるため）
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -31,4 +34,11 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+
+    // API 21 未満での multidex サポート
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Conscrypt: 古い Android でも TLS 1.2 を使えるようにする OpenSSL/BoringSSL ベースのライブラリ
+    // API 9 (Android 2.3) 以上に対応
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
 }

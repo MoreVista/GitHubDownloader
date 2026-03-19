@@ -42,7 +42,7 @@ public class GitHubApiClient {
     };
 
     static {
-        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             try {
                 tlsSocketFactory = new TLSSocketFactory();
             } catch (KeyManagementException | NoSuchAlgorithmException e) {
@@ -71,7 +71,7 @@ public class GitHubApiClient {
                     conn = (HttpURLConnection) u.openConnection();
 
                     // Android 4.1-4.4: 全証明書信頼 + ホスト名検証スキップ
-                    if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT
+                    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP
                             && conn instanceof HttpsURLConnection) {
                         HttpsURLConnection https = (HttpsURLConnection) conn;
                         if (tlsSocketFactory != null) {
